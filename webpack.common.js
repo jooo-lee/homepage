@@ -8,6 +8,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.html$/i,
+                use: 'html-loader',
+            },
+            {
                 test: /\.css$/i,
                 use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
@@ -15,14 +19,14 @@ module.exports = {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'assets/[hash][ext][query]',
+                    filename: 'images/[hash][ext][query]',
                 },
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'assets/[hash][ext][query]',
+                    filename: 'fonts/[hash][ext][query]',
                 },
             },
         ],
