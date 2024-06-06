@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* === Global Settings === */
+
+:root {
+    --primary-font: 'Playfair Display', system-ui, Helvetica, Arial, sans-serif;
+    --secondary-font: 'Roboto', system-ui, Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: var(--primary-font);
+    font-size: 2.75rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: var(--primary-font);
+    font-size: 1.75rem;
+    font-weight: 200;
+}
+
+p {
+    font-family: var(--secondary-font);
+}
+
+/* === Header === */
+
+header {
+    position: relative;
+    background: linear-gradient(150deg, #7c395c 40%, white 40%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.name {
+    color: white;
+    position: absolute;
+    top: 310px;
+
+    /* Center absolute position element horizontally */
+    text-align: center;
+    width: auto;
+    left: 0;
+    right: 0;
+    margin: 0 2.5rem;
+}
+
+.main-portrait {
+    height: 350px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
