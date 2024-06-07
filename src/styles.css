@@ -40,6 +40,10 @@ a {
     text-decoration: none;
 }
 
+i {
+    font-size: 1.5rem;
+}
+
 /* === Header === */
 
 header {
@@ -126,10 +130,51 @@ main {
 
 .devicon-github-original {
     display: block;
-    font-size: 1.5rem;
 }
 
 .external-link {
     display: block;
     width: 1.5rem;
+}
+
+/* === Footer === */
+
+footer {
+    background-color: #7c395c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+.contact-info {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-links > a {
+    padding: 0.25rem;
+    color: white;
+}
+
+.contact-links > a > i {
+    display: block;
+    font-size: 2rem;
+}
+
+.footer-img {
+    width: 100%;
 }
