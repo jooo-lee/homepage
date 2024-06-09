@@ -47,38 +47,40 @@ i {
 /* === Header === */
 
 header {
-    position: relative;
-    background: linear-gradient(150deg, #7c395c 40%, white 40%);
     padding: 1rem;
+    background: linear-gradient(150deg, #7c395c 40%, white 40%);
+}
+
+header > div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
 }
 
-.name {
+.main-portrait-container {
+    margin-top: 1rem;
+    position: relative;
+}
+
+header h1 {
     color: white;
     position: absolute;
-    top: 310px;
+    bottom: 1rem;
 
     /* Center absolute position element horizontally */
     text-align: center;
-    width: auto;
     left: 0;
     right: 0;
-    margin: 0 2.5rem;
 }
 
 .main-portrait {
-    margin-top: 1rem;
+    display: block;
     height: 350px;
 }
 
-.about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+header h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 /* === Main === */
