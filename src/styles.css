@@ -189,3 +189,48 @@ footer h2 {
 .footer-img {
     width: 100%;
 }
+
+/* === Tablet Breakpoint === */
+
+@media (min-width: 600px) {
+    /* === Header === */
+
+    header {
+        padding: 7rem 5rem 1rem;
+        background: linear-gradient(170deg, var(--main-color) 50%, white 50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header > div {
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 3rem 1rem;
+        background-color: white;
+        max-width: 530px;
+    }
+
+    header h1 {
+        padding: 0;
+        background-color: transparent;
+        top: 0.5rem;
+        right: -9rem;
+        bottom: auto;
+        left: auto;
+    }
+
+    header h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .main-portrait-container {
+        float: left;
+        margin: 0 1rem -5rem 0;
+        top: -5rem;
+        transform: scale(1.2);
+        transform-origin: right bottom;
+    }
+}
