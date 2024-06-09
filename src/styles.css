@@ -6,6 +6,7 @@
 :root {
     --primary-font: 'Playfair Display', system-ui, Helvetica, Arial, sans-serif;
     --secondary-font: 'Roboto', system-ui, Helvetica, Arial, sans-serif;
+    --main-color: #7c395c;
 }
 
 * {
@@ -16,7 +17,7 @@
 
 h1 {
     font-family: var(--primary-font);
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     font-weight: 300;
 }
 
@@ -48,7 +49,7 @@ i {
 
 header {
     padding: 1rem;
-    background: linear-gradient(150deg, #7c395c 40%, white 40%);
+    background: linear-gradient(150deg, var(--main-color) 40%, white 40%);
 }
 
 header > div {
@@ -63,19 +64,27 @@ header > div {
 }
 
 header h1 {
+    background-color: var(--main-color);
     color: white;
     position: absolute;
     bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
 
     /* Center absolute position element horizontally */
     text-align: center;
     left: 0;
     right: 0;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 .main-portrait {
+    /* Remove space between bottom of image and parent container */
     display: block;
-    height: 350px;
+
+    height: 250px;
+    border-radius: 0.25rem;
 }
 
 header h2 {
@@ -142,7 +151,7 @@ main {
 /* === Footer === */
 
 footer {
-    background-color: #7c395c;
+    background-color: var(--main-color);
     color: white;
     display: flex;
     flex-direction: column;
