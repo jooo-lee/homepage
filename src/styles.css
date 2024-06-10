@@ -103,8 +103,10 @@ main {
 }
 
 .projects-container {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(0, 300px));
     gap: 1.5rem;
 }
 
