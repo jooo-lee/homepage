@@ -248,11 +248,21 @@
                     ></a>
                 </div>
             </div>
-            <img
-                src="images/stormtrooper-cropped.jpeg"
-                alt="Lego stormtrooper relaxing on sand"
-                class="footer-img"
-            />
+            <picture>
+                <source
+                    srcset="images/stormtrooper.jpeg"
+                    media="(max-width: 599px)"
+                />
+                <source
+                    srcset="images/stormtrooper-small.png"
+                    media="(max-width: 699px)"
+                />
+                <img
+                    src="images/stormtrooper.jpeg"
+                    alt="Lego stormtrooper relaxing on sand"
+                    class="footer-img"
+                />
+            </picture>
         </footer>
     </body>
 </html>
