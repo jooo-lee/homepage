@@ -6,7 +6,8 @@
 :root {
     --primary-font: 'Playfair Display', system-ui, Helvetica, Arial, sans-serif;
     --secondary-font: 'Roboto', system-ui, Helvetica, Arial, sans-serif;
-    --main-color: #7c395c;
+    --main-color: #615770;
+    --box-shadow: 2px 2px 8px rgba(31, 31, 31, 0.6);
 }
 
 * {
@@ -61,6 +62,8 @@ header > div {
 .main-portrait-container {
     margin-top: 1rem;
     position: relative;
+    border-radius: 0.25rem;
+    box-shadow: var(--box-shadow);
 }
 
 header h1 {
@@ -112,7 +115,7 @@ main {
 
 .project {
     border-radius: 4px;
-    box-shadow: 1px 1px 10px rgb(161 161 161);
+    box-shadow: var(--box-shadow);
     padding: 1rem;
     max-width: 300px;
     display: flex;
@@ -209,7 +212,7 @@ footer h2 {
 
     header > div {
         display: inline-block;
-        border: 1px solid black;
+        box-shadow: var(--box-shadow);
         border-radius: 4px;
         padding: 3rem 1rem;
         background-color: white;
