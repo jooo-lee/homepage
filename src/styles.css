@@ -118,13 +118,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
 }
 
 .project-img {
     border-radius: 4px;
     max-height: 230px;
     max-width: 230px;
-    margin-bottom: 1rem;
 }
 
 .project-title-and-links {
@@ -132,7 +132,6 @@ main {
     display: flex;
     align-items: center;
     gap: 0.25rem;
-    margin-bottom: 0.5rem;
 }
 
 .project-title-and-links > h3 {
@@ -201,7 +200,7 @@ footer h2 {
     /* === Header === */
 
     header {
-        padding: 7rem 5rem 1rem;
+        padding: 8rem 5rem 1rem;
         background: linear-gradient(170deg, var(--main-color) 50%, white 50%);
         display: flex;
         flex-direction: column;
@@ -239,6 +238,12 @@ footer h2 {
         transform-origin: right bottom;
     }
 
+    /* === Main === */
+
+    main {
+        gap: 2rem;
+    }
+
     /* === Footer === */
 
     footer {
@@ -274,6 +279,10 @@ footer h2 {
 @media (min-width: 1000px) {
     /* === Header === */
 
+    header {
+        padding: 5rem 5rem 1rem;
+    }
+
     header > div {
         max-width: 700px;
         padding: 0 1rem;
@@ -289,7 +298,7 @@ footer h2 {
     }
 
     header h2 {
-        margin-top: 1.5rem;
+        margin-top: 2rem;
     }
 
     .main-portrait-container {
@@ -306,5 +315,11 @@ footer h2 {
 
     .projects-container {
         grid-template-columns: repeat(3, auto);
+    }
+
+    /* === Footer === */
+
+    .contact-info {
+        gap: 1.5rem;
     }
 }
