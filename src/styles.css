@@ -64,7 +64,7 @@ header > div {
 }
 
 header h1 {
-    background-color: var(--main-color);
+    background-color: rgba(39, 39, 39, 0.8);
     color: white;
     position: absolute;
     bottom: 1rem;
@@ -266,5 +266,33 @@ footer h2 {
         border-radius: 4px;
         width: auto;
         max-height: 300px;
+    }
+}
+
+@media (min-width: 1000px) {
+    /* === Header === */
+
+    header > div {
+        max-width: 700px;
+        padding: 0 1rem;
+    }
+
+    header h1 {
+        padding: 0.5rem;
+        background-color: rgba(39, 39, 39, 0.8);
+        top: auto;
+        right: 0;
+        bottom: 1rem;
+        left: 0;
+    }
+
+    header h2 {
+        margin-top: 1.5rem;
+    }
+
+    .main-portrait-container {
+        transform-origin: right center;
+        top: 0;
+        margin-bottom: 0;
     }
 }
