@@ -104,7 +104,7 @@ header h1 {
     background-color: rgba(39, 39, 39, 0.8);
     color: white;
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.5rem;
     padding: 0.5rem;
     border-radius: 0.25rem;
 
@@ -351,7 +351,7 @@ footer h2 {
         background-color: rgba(39, 39, 39, 0.8);
         top: auto;
         right: 0;
-        bottom: 1rem;
+        bottom: 0.5rem;
         left: 0;
     }
 
