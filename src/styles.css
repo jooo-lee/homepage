@@ -52,6 +52,7 @@ p {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 i {
@@ -87,10 +88,15 @@ header {
 }
 
 .header-content {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 2;
+}
+
+.header-content a {
+    text-decoration: underline;
 }
 
 .main-portrait-container {
@@ -125,8 +131,8 @@ header h1 {
 }
 
 header h2 {
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* === Main === */
@@ -356,7 +362,7 @@ footer h2 {
     }
 
     header h2 {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
 
     .main-portrait-container {
