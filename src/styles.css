@@ -384,3 +384,35 @@ footer h2 {
         transform: translateY(calc(-100% + 300px)) rotate(-3deg);
     }
 }
+
+/* === Hover Effects === */
+
+@media (hover: hover) {
+    /* === Main === */
+
+    .project {
+        transition: transform 200ms ease-in-out;
+    }
+
+    .project:hover {
+        transform: translateY(-6px);
+    }
+
+    .project-title-and-links > a {
+        transition: transform 200ms ease-in-out;
+    }
+
+    .project-title-and-links > a:hover {
+        transform: scale(1.1);
+    }
+
+    /* === Footer === */
+
+    .contact-links > a {
+        transition: transform 200ms ease-in-out;
+    }
+
+    .contact-links > a:hover {
+        transform: scale(1.1);
+    }
+}
