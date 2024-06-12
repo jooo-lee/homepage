@@ -375,12 +375,6 @@ footer h2 {
     .projects-container {
         grid-template-columns: repeat(3, auto);
     }
-
-    /* === Footer === */
-
-    .contact-info {
-        gap: 1.5rem;
-    }
 }
 
 @media (min-width: 2300px) {
